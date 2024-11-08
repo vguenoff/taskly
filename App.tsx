@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View, StyleSheet } from 'react-native'
+import theme from './theme'
 
 // Cmd + D in the simulator open dev menu
 // Shift + M in the terminal open dev menu
@@ -7,7 +8,9 @@ import { StyleSheet, Text, View } from 'react-native'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <View style={styles.textWrapper}>
+        <Text style={styles.text}>Coffee</Text>
+      </View>
       <StatusBar style="auto" />
     </View>
   )
@@ -16,8 +19,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f0',
-    alignItems: 'center',
+    backgroundColor: theme.color.white,
     justifyContent: 'center',
+  },
+  textWrapper: {
+    borderBottomWidth: 1,
+    borderBottomColor: theme.color.cerulian,
+    paddingHorizontal: 8,
+    paddingVertical: 16,
+  },
+  text: {
+    fontSize: 18,
+    fontWeight: 200,
   },
 })
