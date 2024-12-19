@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   wrapper: {
     borderBottomWidth: 1,
     borderBottomColor: theme.color.cerulean,
-    paddingHorizontal: 8,
+    paddingHorizontal: 18,
     paddingVertical: 16,
     flexDirection: 'row',
     alignItems: 'center',
