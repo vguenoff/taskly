@@ -6,6 +6,7 @@ const theme = {
     pink: '#fce8e6',
     grey: 'gray',
     lightGrey: '#eee',
+    red: '#ee6055',
   },
 }
 
